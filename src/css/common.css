@@ -16,3 +16,13 @@ img {
   display: block;
   max-width: 100%;
 }
+
+.value{
+  font-size: 24px;
+
+}
+
+.label{
+  font-style: italic;
+  font-size: 24px;
+}
