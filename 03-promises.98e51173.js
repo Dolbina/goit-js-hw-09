@@ -1,0 +1,2 @@
+!function(){var e={form:document.querySelector(".form"),delay:document.querySelector('[name="delay"]'),step:document.querySelector('[name="step"]'),amount:document.querySelector('[name = "amount"]'),submit:document.querySelector(".form button")};e.form.addEventListener("submit",(function(t){t.preventDefault();e.amount.value,e.delay.value;var n=e.step.value;console.log(n)})),e.submit.addEventListener("click",(function(e){}))}();
+//# sourceMappingURL=03-promises.98e51173.js.map
