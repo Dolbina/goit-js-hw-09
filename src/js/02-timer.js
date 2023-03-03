@@ -15,7 +15,7 @@ const minutes = document.querySelector('span[data-minutes]');
 const seconds = document.querySelector('span[data-seconds]');
 
 
-// Кнопка вимкнена
+// Кнопка вимкнена (стан кнопки)
 
 startBtnEl.disabled = true;
 
