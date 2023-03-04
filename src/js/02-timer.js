@@ -3,6 +3,7 @@
 
 import flatpickr from 'flatpickr';
 import 'flatpickr/dist/flatpickr.min.css';
+import Notiflix from 'notiflix';
 
 // Вибирає кнопку та поля з днем, годинами, хвилинами, секундами
 const startBtnEl = document.querySelector("[data-start]");
@@ -57,23 +58,23 @@ const options = {
   minuteIncrement: 1,
   onClose(selectedDates) {
       console.log(selectedDates[0]);
-    //   якщо вибрана дата з минулого, то повертає повідомлення та кнопка не активна
-      if (selectedDates[0] < new Date()) {
+    //   якщо вибрана дата з минулого, то повертає повідомлення та кнопка ще не активна
+    if (selectedDates[0] < new Date()) {
         
-return alert('Please choose a date in the future');
-startBtnEl.disabled = true;
+        //використовує бібліотеку Notiflix для відображення повідомлення
+
+        return Notiflix.Notify.failure('Please choose a date in the future');
+        startBtnEl.disabled = true;
       }
       else {
         //   якщо вибрана дата з майбутнього, то запускає таймер
         startBtnEl.disabled = false;
-    }
-        
+    }  
   },
 };
 
 // Виклик функції, яка дозволяє вибрати дату з календаря
  flatpickr(inputDateEl, options);
-
 
 // Додає слухача на кнопку
 
