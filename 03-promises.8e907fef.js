@@ -1,2 +1,0 @@
-const e={form:document.querySelector(".form"),delay:document.querySelector('[name="delay"]'),step:document.querySelector('[name="step"]'),amount:document.querySelector('[name = "amount"]'),submit:document.querySelector(".form button")};e.form.addEventListener("submit",(function(t){t.preventDefault();e.amount.value,e.delay.value;const o=e.step.value;console.log(o)})),e.submit.addEventListener("click",(function(e){}));
-//# sourceMappingURL=03-promises.8e907fef.js.map
